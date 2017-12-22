@@ -1,0 +1,13 @@
+.fa {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 35px;
+}
+
+.container {
+    width: 85%;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}

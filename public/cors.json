@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["http://savageceos-e2eeb.appspot.com/Media"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]

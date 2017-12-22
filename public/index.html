@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Savage CEOs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="node_modules/angular-material/angular-material.min.css" rel="stylesheet" />
+    <link href="node_modules/materialize-css/dist/css/materialize.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="md.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js">
+    </script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angularfire/dist/angularfire.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCCgyakZtnfoMdXnyqdKQFOGm4QlMRdS70",
+        authDomain: "savageceos-e2eeb.firebaseapp.com",
+        databaseURL: "https://savageceos-e2eeb.firebaseio.com",
+        projectId: "savageceos-e2eeb",
+        storageBucket: "savageceos-e2eeb.appspot.com",
+        messagingSenderId: "890314403955"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="node_modules/amplitudejs/dist/amplitude.js"></script>
+    <!-- <script src="scripts/analytics/analytics.js"></script> -->
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body ng-app="savage" ng-cloak>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!/">
+                    <img flex src="https://storage.googleapis.com/savageceos-e2eeb.appspot.com/Media/logo.png" alt="Savage CEOs" style="height: 8vh;">
+                </a>
+                <ul class="right hide-on-large-only">
+                    <a href="#" data-sidenav="right" data-menuwidth="300" data-closeonclick="true" data-activates="mobile-nav" class="left top-nav button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#!/Music">Music</a></li>
+                    <li><a href="#!/Shop">Shop</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Team<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a href="#!/About">About</a></li>
+                </ul>
+                <ul class="side-nav black" id="mobile-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Music">Music</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Shop">Shop</a></li>
+                    <li class="divider"></li>
+                    <li>
+                        <ul class="collapsible collapsible-accordion">
+                            <li>
+                                <a class="collapsible-header">Team<i class="material-icons pull-left">arrow_drop_down</i></a>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li class="divider"></li>
+                                        <li><a href="#!/Team">Team</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!/Artists">Artists</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!/Producers">Producers</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!/Engineers">Engineers</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!/Dancers">Dancers</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="#!/About">About</a></li>
+                </ul>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#!/Team">Team</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Artists">Artists</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Producers">Producers</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Engineers">Engineers</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!/Dancers">Dancers</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main ng-view class="center black red-text text-darken-4">
+    </main>
+    <footer class="page-footer  red-text text-darken-4 flow-text center center-align">
+        <div class="row">
+            <h3>Reach Out to Us</h3>
+            <a href="tel:1-732-993-8339" class="fa fa-phone" />
+            <a href="mailto:savageceos@gmail.com" class="fa fa-envelope" />
+            <a href="https://twitter.com/savageceos" class="fa fa-twitter" />
+            <a href="https://soundcloud.com/savageceos" class="fa fa-soundcloud" />
+            <a href="https://www.instagram.com/savageceos/?ref=badge" class="fa fa-instagram" />
+            <a href="https://www.youtube.com/channel/UCkksLfuTaoLp-l6FnvEEEdQ" class="fa fa-youtube" />
+            <a href="#" class="fa fa-snapchat" />
+            <a href="https://www.facebook.com/savageceos/" class="fa fa-facebook"></a>
+        </div>
+        <div class="row">
+            Made by <a href="http://ambitiousroyalty.com">Ambitious Royalty</a>
+        </div>
+    </footer>
+    <script src="node_modules/angular-sanitize/angular-sanitize.min.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-aria/angular-aria.js"></script>
+    <script src="node_modules/angular-messages/angular-messages.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/angular-material/angular-material.min.js"></script>
+    <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="node_modules/angular-materialize/src/angular-materialize.js"></script>
+    <script src="node_modules/angular-material-calendar/dist/angular-material-calendar.min.js"></script>
+    <!-- App Code -->
+    <script src="app/app.js"></script>
+    <script src="app/controllers/HomeCtrl.js"></script>
+    <script src="app/controllers/shopCtrl.js"></script>
+    <script src="app/controllers/hatsCtrl.js"></script>
+    <script src="app/controllers/hoodiesCtrl.js"></script>
+    <script src="app/controllers/tshirtsCtrl.js"></script>
+    <script src="app/controllers/eventCtrl.js"></script>
+    <script src="app/controllers/teamCtrl.js"></script>
+    <script src="app/controllers/artistCtrl.js"></script>
+    <script src="app/controllers/musicCtrl.js"></script>
+    <script src="app/controllers/ProducersCtrl.js"></script>
+    <script src="app/controllers/shoutOutCtrl.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<section>
+    <div class="row center">
+        <div class="col l6 m6 s12" ng-repeat="page in pages">
+            <a ng-href="{{page.url}}">
+                <div class="card large">
+                    <h2>{{page.page}}</h2>
+                    <img class="responsive-img" ng-src="{{page.img}}">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>

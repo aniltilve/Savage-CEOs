@@ -1,0 +1,12 @@
+<section class="row center center-align">
+    <div ng-repeat="savage in savages">
+        <a href="{{savage.url}}">
+            <div class="col l6 s12 m6">
+                <h2 class="header">{{savage.name}}</h2>
+                <img ng-src="{{savage.img1}}" class="responsive-img">
+                <p>{{savage.location}}</p>
+                <a href="{{savage.soundcloudProfileUrl}}"><img src="/../https://storage.googleapis.com/savageceos-e2eeb.appspot.com/Media/soundcloud-logo.png" height="69px"></a>
+            </div>
+        </a>
+    </div>
+</section>

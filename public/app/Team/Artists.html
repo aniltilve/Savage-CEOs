@@ -1,0 +1,14 @@
+<div ng-repeat="artist in artists">
+    <a ng-href="{{artist.url}}">
+        <div class="row">
+            <h2 class="header">{{artist.name}}</h2>
+            <div class="col l6 s12 m12">
+                <img ng-src="{{artist.img1}}" class="responsive-img" alt="{{artist.name}} on Savage CEOs">
+            </div>
+            <div class="col l6 s12 m12">
+                <p class="flow-text">{{artist.location}}</p>
+                <a href="{{artist.soundCloudProfileUrl}}"><img src="https://storage.googleapis.com/savageceos-e2eeb.appspot.com/Media/soundcloud-logo.png" height="69px"></a>
+            </div>
+        </div>
+    </a>
+</div>

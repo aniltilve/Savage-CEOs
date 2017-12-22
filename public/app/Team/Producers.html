@@ -1,0 +1,35 @@
+<section class="row center center-align black">
+    <div ng-repeat="producer in producers">
+        <a ng-href="{{producer.url}}">
+            <div class="col l6 s12 m6">
+                <h2 class="header">{{producer.name}}</h2>
+                <img ng-src="{{producer.img1}}" class="responsive-img">
+                <p class="flow-text">{{producer.location}}</p>
+                <a href="{{producer.soundcloudProfileUrl}}">
+                    <img src="https://storage.googleapis.com/savageceos-e2eeb.appspot.com/Media/soundcloud-logo.png" height="69px">
+                </a>
+            </div>
+        </a>
+    </div>
+</section>
+<!-- 
+                <div style="width:200px; border:solid #999999 1px; background-image:url('http://www.soundclick.com/images/elogos/SC_ExtBG200.png')">
+                    <a href='http://www.soundclick.com/SavageCEOs'>
+                        <div style="background-color:width:200px; height:70px; cursor:pointer; background-image:url('http://www.soundclick.com/images/elogos/SC_200.png');"></div>
+                    </a>
+                    <div id="lower">
+                        <object type="application/x-shockwave-flash" allowScriptAccess="never" allowNetworking="internal" height="60" width="200" data="http://www.soundclick.com/player/V2/mp3player200.swf">
+                            <param name="allowScriptAccess" value="never" />
+                            <param name="allowNetworking" value="internal" />
+                            <param name="movie" value="http://www.soundclick.com/player/V2/mp3player200.swf" />
+                            <param name="loop" value="false" />
+                            <param name="menu" value="false" />
+                            <param name="quality" value="high" />
+                            <param name="wmode" value="transparent" />
+                            <param name="flashvars" value="playType=single&songid=13465934&scid=13465934&q=hi&ext=1" />
+                            <param name="scale" value="noscale" />
+                            <param name="salign" value="b" />
+                            <param name="bgcolor" value="#000000" />
+                        </object>
+                    </div>
+                </div> -->

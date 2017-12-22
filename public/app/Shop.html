@@ -1,0 +1,15 @@
+<section class="container">
+    <div class="row">
+        <a ng-href="{{product.url}}">
+            <div class="col s12 m6 l4" ng-repeat="product in products">
+                <div class="card black medium">
+                    <h1>{{product.type}}</h1>
+                    <!-- <h5 class="center-align">{{product.name + " " + product.color + " " + product.productType}} </h5> -->
+                    <div class="card-image">
+                        <img ng-src="{{product.img}}">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
